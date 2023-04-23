@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4ephyr</title>
   <head>
     <meta charset="UTF-8">
     <title>4ephyr</title>
@@ -27,9 +32,43 @@
       .hover:hover {
         transform: scale(1.1);
       }
+      
+      .navbar {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding: 1rem;
+        z-index: 1;
+      }
+      
+      .navbar a {
+        text-decoration: none;
+        color: white;
+        margin: 0 1rem;
+        padding: 5px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all .2s ease-in-out;
+      }
+      
+      .navbar a:hover {
+        color: red;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 0.25rem;
+      }
     </style>
   </head>
   <body>
+    <nav class="navbar">
+      <a href="/resume/">Resume</a>
+      <a href="/blog/">Blog</a>
+    </nav>
     <div class="center">
       <h1 class="hover">4ephyr</h1>
     </div>
