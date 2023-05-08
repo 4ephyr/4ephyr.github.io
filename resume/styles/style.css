@@ -1,0 +1,138 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Popins',sans-serif;
+    font-weight: lighter;
+}
+html,body{
+    width: 60vw;
+    height: 100%;
+    margin: auto;
+}
+.basic-details{
+    box-sizing: border-box;
+    line-height: 1.7;
+}
+.basic-details i{
+    margin-right: 5px;
+}
+.header-top{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    color: whitesmoke;
+}
+.header-top a{
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.contact{
+    box-sizing: border-box;
+    line-height: 1.9;
+    font-size: .9rem;
+}
+.contact i{
+    margin-right: 10px;
+}
+.full-content{
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center;  */
+}
+.exp{
+    line-height: 2.5;
+}
+.exp .efx{
+    font-size: .9rem;
+    /* margin-top: 10px; */
+    font-weight: 600;
+    color: #5f5f5f;
+}
+.exp .desg{
+    font-size: .9rem;
+    /* margin: 10px 0px; */
+    font-weight: 500;
+}
+.timing{
+    font-size: .8rem;
+    font-weight: 500;
+}
+.wht li{
+    /* margin-top: 20px; */
+    margin-left: 20px;
+    font-size: .79rem;
+}
+.projects{
+    /* padding: 3rem 0px; */
+    line-height: 2.5;
+    box-sizing: border-box;
+}
+.projects p{
+    /* margin-top: 10px; */
+    font-size: .9rem;
+    font-weight: 500;
+}
+.skills{
+    box-sizing: border-box;
+    line-height: 2.5;
+}
+.skills h5{
+    font-weight: bold;
+    color: #5f5f5f;
+}
+.skills p span{
+    font-size: .9rem;
+    padding: 7px;
+    margin: 5px;
+    background-color: rgb(197, 197, 197);
+    border-radius: 5px;
+}
+.educ{
+    line-height: 2.5;
+}
+.educ .school{
+    font-size: .8rem;
+    font-weight: bold;
+    color: #5f5f5f;
+}
+.course{
+    font-size: .8rem;
+    line-height: 0.5;
+    font-weight: 500;
+}
+.langs{
+    line-height: 2;
+}
+.langs li{
+    /* line-height: 2; */
+    font-size: .8rem;
+    margin-left: 2rem;
+}
+.content-2{
+    padding-left: 2rem;
+}
+@media all and (max-width: 500px){
+    html,body{
+        height: auto;
+        width: auto;
+        margin: 0;
+    }
+    .header-top{
+        line-height: 1;
+    }
+    .header-top .basic-details{
+        font-size: .8rem;
+    }
+    .exp{
+        line-height: 1.9;
+    }
+    .educ{
+        line-height: 1.9;
+    }
+}
