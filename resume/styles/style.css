@@ -43,20 +43,17 @@ html,body{
     box-sizing: border-box;
     display: flex;
     justify-content: space-evenly;
-    /* align-items: center;  */
 }
 .exp{
     line-height: 2.5;
 }
 .exp .efx{
     font-size: .9rem;
-    /* margin-top: 10px; */
     font-weight: 600;
     color: #5f5f5f;
 }
 .exp .desg{
     font-size: .9rem;
-    /* margin: 10px 0px; */
     font-weight: 500;
 }
 .timing{
@@ -64,17 +61,14 @@ html,body{
     font-weight: 500;
 }
 .wht li{
-    /* margin-top: 20px; */
     margin-left: 20px;
     font-size: .79rem;
 }
 .projects{
-    /* padding: 3rem 0px; */
     line-height: 2.5;
     box-sizing: border-box;
 }
 .projects p{
-    /* margin-top: 10px; */
     font-size: .9rem;
     font-weight: 500;
 }
@@ -108,8 +102,10 @@ html,body{
 .langs{
     line-height: 2;
 }
+.educ{
+    line-height: 2;
+}
 .langs li{
-    /* line-height: 2; */
     font-size: .8rem;
     margin-left: 2rem;
 }
