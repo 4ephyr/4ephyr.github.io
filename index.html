@@ -9,7 +9,6 @@
     <meta charset="UTF-8">
     <title>4ephyr</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
     <style>
       body {
@@ -23,15 +22,10 @@
         height: 100vh;
       }
       
-      .hover {
+      .name {
         color: white;
         font-size: 5rem;
-        transition: all .2s ease-in-out;
-      }
-      
-      .hover:hover {
-        transform: scale(1.1);
-      }
+        }
       
       .navbar {
         background-color: transparent;
@@ -61,15 +55,26 @@
         background-color: rgba(255, 255, 255, 0.2);
         border-radius: 0.25rem;
       }
+      @media all and (width < 500px){
+        .navbar{
+          display: grid;
+        }
+        .navbar a{
+          margin: 0;
+        }
+        .name{
+          transform: scale(.7);
+        }
+      }
     </style>
   </head>
   <body>
     <nav class="navbar">
       <a href="/resume/">Resume</a>
-      <a href="/blog/">Blog</a>
+      <a href="/projects/">Projects</a>
     </nav>
     <div class="center">
-      <h1 class="hover">4ephyr</h1>
+      <h1 class="name">4ephyr</h1>
     </div>
   </body>
 </html>
