@@ -144,3 +144,11 @@ html,body{
     font-size: .8rem;
 }
 }
+@media all and (width < 460px){
+    .full-content{
+        display: grid;
+    }
+    .content-2{
+        padding: 0;
+    }
+}
