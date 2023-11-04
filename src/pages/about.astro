@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.tsx';
+import Link from '../components/Link.tsx';
+---
+
+<Layout title='4ephyr'>
+    <header>
+        <Header>
+            <Link refer='https://instagram.com/4ephyr' link='Contact Me' target='_blank'>
+                <span class="material-symbols-outlined text-md">
+                    person
+                </span>
+            </Link>
+        </Header>
+    </header>
+    <div class="flex">
+        <div class="sm:px-5 sm:mx-8 py-8 my-8 px-4">
+            <div class="flex items-center mb-4">
+                <img src="/assets/images/mine.jpg" alt="Profile" height="100" width="150" class="rounded-full mr-4">
+                <h1 class="text-primary text-4xl font-sans font-bold">Mohammed Sahal</h1>
+            </div>
+            <p class="text-primary text-2xl font-sans sm:max-w-[70%] font-semibold">I am a curiosity driven enthusiastic researcher who loves to develop random stuff and explore newer technologies.</p>
+        </div>
+    </div>
+</Layout>

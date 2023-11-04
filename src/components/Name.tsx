@@ -6,7 +6,7 @@ interface Props {
 
 function Name(props: Props) {
   return (
-    <h1 className="text-[4rem] font-semibold text-[#F8F8FF] leading-[5rem]">4ephyr</h1>
+    <h1 className="text-[4rem] font-semibold text-primary leading-[5rem]">{props.name}</h1>
   );
 }
 
