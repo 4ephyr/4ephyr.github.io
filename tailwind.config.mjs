@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import bebas from "@fontsource/bebas-neue";
 
 const color = {
   night: {
