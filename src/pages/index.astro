@@ -1,21 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Link from '../components/Link.tsx';
-import Header from '../components/Header.tsx';
-import Name from '../components/Name.tsx';
+import Header from '../components/Header.astro';
+import Name from '../components/Button.astro';
 ---
 
 <Layout title="4ephyr">
-	<main class="m-0 p-0 overflow-hidden">
-			<Header>
-				<div class="flex">
-					<Link link="About" refer='about/'/>
-					<Link link="Blog" refer='blog/'/>
-				</div>
-			</Header>
-		
-		<div class="absolute h-[100vh] w-full flex justify-center items-center top-0 -z-10">
-			<Name name="4ephyr"></Name>
-		</div>
-	</main>
+	<Header />
 </Layout>
