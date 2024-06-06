@@ -1,11 +1,13 @@
 ---
 import Contact from "./Contact.astro";
+import { Image } from 'astro:assets';
+import image from '../images/myImage.png';
 ---
 
 <section class="px-8 py-12">
     <div class="flex flex-row justify-center gap-10">
         <div class="self-center flex flex-col">
-            <h1 class="text-primary text-[5rem] leading-[1] font-bebas">HI, I AM <br> <span class="hover:text-tint" >MOHAMMED SAHAL</span></h1>
+            <h1 class="text-primary text-[5rem] leading-[1] font-bebas">HI, I AM <br> <span class="bg-gradient-to-r from-tint to-accent text-transparent bg-clip-text" >MOHAMMED SAHAL</span></h1>
             <div>
                 <p class="text-primary font-raleway max-w-lg">
                     A Kerala based developer/researcher passionate about developing and learning modern technologies.
@@ -14,7 +16,7 @@ import Contact from "./Contact.astro";
             <Contact />
         </div>
         <div>
-            <img src="/assets/images/4.png" alt="Load Error" class="rounded-lg">
+            <Image class="rounded-lg" src={image} alt="Error" height={300} />
         </div>
     </div>
 </section>
