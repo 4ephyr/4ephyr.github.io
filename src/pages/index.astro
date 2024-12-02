@@ -1,11 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro';
+import Content from '../components/Content.astro';
 ---
 
 <Layout title="4ephyr">
-	<Header />
-	<Hero />
-	
+	<Content>
+		<h1 class="text-primary text-5xl font-semibold leading-[1] font-primary">Hi, I'm  <span class="text-tint" > Sahl.</span></h1>
+		<div>
+			<p class="text-primary font-primary max-w-lg text-lg">
+				A Kerala based enthusiastic developer/researcher who loves developing and learning amazing stuff.
+			</p>
+		</div>
+	</Content>
 </Layout>

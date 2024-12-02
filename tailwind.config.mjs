@@ -13,7 +13,7 @@ const color = {
     800: "#a1a1a1",
     900: "#d0d0d0",
   },
-  "azure_(web)": {
+  primary: {
     DEFAULT: "#ebfffa",
     100: "#006249",
     200: "#00c493",
@@ -49,7 +49,7 @@ const color = {
     800: "#92d4f9",
     900: "#c9e9fc",
   },
-  "red_(cmyk)": {
+  tint: {
     DEFAULT: "#ee2e31",
     100: "#350405",
     200: "#6a090a",
@@ -72,17 +72,17 @@ export default {
         ls: { max: "795pxpx" },
       },
       colors: {
-        primary: color["azure_(web)"],
+        primary: color.primary,
         secondary: color.night,
         accent: color.celestial_blue,
         darkAccent: color.tufts_blue,
-        tint: color["red_(cmyk)"],
+        tint: color.tint,
       },
       fontFamily: {
-        bebas: ["Bebas Neue", "sans-serif"],
-        raleway: ["Raleway", "sans-serif"],
+        primary: ["Poppins", "sans-serif"],
       },
     },
+    darkmode: "class",
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };

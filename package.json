@@ -1,7 +1,5 @@
 {
-  "name": "myportfolio",
-  "type": "module",
-  "version": "0.0.1",
+  "homepage": "https://4ephyr.github.io",
   "scripts": {
     "dev": "astro dev --host",
     "start": "astro dev --host",
@@ -11,14 +9,21 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.3.1",
+    "@astrojs/react": "^3.6.3",
     "@astrojs/tailwind": "^5.0.2",
     "@iconify-json/mdi": "^1.1.66",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
     "astro": "^3.4.3",
+    "nanostores": "^0.11.3",
+    "react": "^19.0.0-beta",
+    "react-dom": "^19.0.0-beta",
     "sharp": "^0.33.4",
-    "tailwindcss": "^3.3.5",
+    "tailwindcss": "^3.4.15",
     "typescript": "^5.2.2"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
     "astro-icon": "^1.1.0"
   }
 }
