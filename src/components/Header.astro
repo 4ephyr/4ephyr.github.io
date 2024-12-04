@@ -1,19 +1,25 @@
-<header class="px-8 py-6">
-    <nav class="sm:flex justify-between items-center">
+---
+import ThemeToggle from "./ThemeToggle.astro"
+---
+
+<header class="px-8 py-6 relative">
+    <nav class="sm:flex justify-between items-center ls:block">
         <div>
-            <a href="/"><h1 class="font-primary hover:text-accent text-primary text-5xl font-bold">4EPHYR</h1></a>
+            <a href="/"><h1 class="font-primary text-center hover:text-accent text-secondary text-5xl font-bold dark:text-primary">4EPHYR</h1></a>
         </div>
         <div>
-            <ul class="flex flex-row text-lg m-0 items-center">
-                <li><a href="/work/" class="nav-link">Work</a></li>
+            <ul class="flex flex-row text-lg m-0 items-center justify-center py-4">
+                <li><a href="/projects/" class="nav-link">Projects</a></li>
                 <li><a href="/about/" class="nav-link">About</a></li>
-                <li><a href="/contact/" class="nav-link">Contact</a></li>
+                <li><a href="/contact/" class="nav-link">Hire Me</a></li>
+                <li><a href="/blogs/" class="nav-link">Blogs</a></li>
+                <ThemeToggle />
             </ul>
         </div>
     </nav>
     <style>
         .nav-link {
-            @apply hover:text-tint text-primary px-1 mx-1 font-primary duration-100;
+            @apply hover:text-tint text-secondary px-1 mx-1 font-primary duration-100 dark:text-primary;
         }
     </style>
 </header>

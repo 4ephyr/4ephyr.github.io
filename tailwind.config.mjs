@@ -65,11 +65,13 @@ const color = {
 
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  darkMode: 'class',
   theme: {
     extend: {
       screens: {
         ms: { max: "595px" },
-        ls: { max: "795pxpx" },
+        ls: { max: "795px" },
+        tm: { min: "1250px" },
       },
       colors: {
         primary: color.primary,
@@ -82,7 +84,6 @@ export default {
         primary: ["Poppins", "sans-serif"],
       },
     },
-    darkmode: "class",
   },
   plugins: [require('@tailwindcss/typography')],
 };
