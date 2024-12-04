@@ -1,5 +1,5 @@
 {
-  "homepage": "https://4ephyr.github.io",
+  "homepage": "https://4ephyr.codes",
   "scripts": {
     "dev": "astro dev --host",
     "start": "astro dev --host",

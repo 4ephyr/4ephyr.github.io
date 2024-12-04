@@ -7,5 +7,5 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), icon(), react()],
-  site: 'https://4ephyr.github.io'
+  site: 'https://4ephyr.codes'
 });
