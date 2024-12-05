@@ -22,7 +22,7 @@ const { title, description, date } = post.data;
 const { Content } = await post.render();
 ---
 <Layout title="4ephyr">
-    <ContentLayout heading={title}> -->
+    <ContentLayout heading={title}>
         <BlogPostLayout title={post} description={description} date={date}>
             <Content />
         </BlogPostLayout>
