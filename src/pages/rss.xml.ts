@@ -9,7 +9,7 @@ export async function GET(context) {
   const blog = await getCollection('blogPosts');
   return rss({
     title: "4ephyr's Blog",
-    description: "Blog about cool tech stuff.",
+    description: "Always the cool tech stuff.",
     site: context.site,
     items: blog.map((post) => ({
       title: post.data.title,
@@ -17,10 +17,6 @@ export async function GET(context) {
       description: post.data.description,
       tags: post.data.tags,
       link: `/blogs/${post.slug}/`,
-      content: sanitizeHtml(parser.render(post.body), {
-        allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img'])
-      }),
-      ...post.data,
     })),
   });
 }

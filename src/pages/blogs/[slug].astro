@@ -13,7 +13,7 @@ export async function getStaticPaths() {
     const allPosts = await getCollection('blogPosts');
     return allPosts.map((post: any) => ({
         params: { slug: post.slug },
-        props: { post },
+        props: { post: post },
     }));
 }
 
@@ -22,7 +22,7 @@ const { title, description, date } = post.data;
 const { Content } = await post.render();
 ---
 <Layout title="4ephyr">
-    <ContentLayout heading={title}>
+    <ContentLayout heading={title}> -->
         <BlogPostLayout title={post} description={description} date={date}>
             <Content />
         </BlogPostLayout>

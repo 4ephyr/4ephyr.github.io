@@ -19,5 +19,7 @@ const formattedDate = new Intl.DateTimeFormat('en-US', {
     <p class="m-0">{description}</p>
     <h1 class="text-sm font-medium m-0">{formattedDate}</h1>
   </div>
-  <slot />
+  <div class="font-primary">
+    <slot />
+  </div>
 </article>

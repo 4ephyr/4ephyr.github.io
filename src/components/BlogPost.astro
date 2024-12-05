@@ -16,14 +16,14 @@ const formattedDate = new Intl.DateTimeFormat('en-US', {
 }).format(new Date(date));
 ---
 
-<a class="text-secondary font-semibold dark:text-primary text-3xl py-2 w-full inline-block" href={link}>
+<a class="text-secondary font-semibold font-primary dark:text-primary text-3xl py-2 w-full inline-block" href={link}>
   <div class="flex justify-between">
     <div>
       <span class="underline">{title}</span>
       <p class="text-sm mt-2 font-light">{description}</p>
     </div>
     <div>
-      <p class="text-sm mt-2 font-bold text-primary-500">{formattedDate}</p>
+      <p class="text-sm mt-2 font-bold text-primary-500 ml-2">{formattedDate}</p>
     </div>
   </div>
 </a>

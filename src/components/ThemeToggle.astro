@@ -8,13 +8,12 @@
       </svg>
     </span>
   </button>
-  
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const toggleButton = document.getElementById('theme-toggle');
       const moonIcon = document.getElementById('moon-icon');
       const sunIcon = document.getElementById('sun-icon');
-  
+
       const savedTheme = localStorage.getItem('theme') || 'dark';
       if (savedTheme === 'dark') {
         document.documentElement.classList.add('dark');
@@ -25,12 +24,12 @@
         moonIcon.classList.remove('hidden');
         sunIcon.classList.add('hidden');
       }
-  
+
       toggleButton.addEventListener('click', () => {
         const isDarkMode = document.documentElement.classList.toggle('dark');
         const newTheme = isDarkMode ? 'dark' : 'light';
         localStorage.setItem('theme', newTheme);
-  
+
         if (isDarkMode) {
           moonIcon.classList.add('hidden');
           sunIcon.classList.remove('hidden');
@@ -41,4 +40,3 @@
       });
     });
   </script>
-  
